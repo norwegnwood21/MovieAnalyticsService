@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="REST-контроллер для /api/reports (создать, история, открыть, повторить)" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;norwegnwood21&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/norwegnwood21/MovieAnalyticsService&quot;,
+    &quot;accountId&quot;: &quot;07babbcb-9034-42ed-bef5-849c9021d42b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3DOXJjqcgy5UomgjkeRb0iKtCa3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MovieAnalyticsApplication.executor": "Run",
+    "Application.TmdbTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/facade-frontend",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Лилия/IdeaProjects/MovieAnalyticsService/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService" />
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\resources\static" />
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\service" />
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\controller" />
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="" />
+      <created>1778154022733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778154022733</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit: project structure">
+      <option name="closed" value="true" />
+      <created>1778704073613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778704073613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Feature commit TMDB test">
+      <option name="closed" value="true" />
+      <created>1778704499444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778704499444</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлен pom.xml со всеми зависимостями Spring Boot, JPA, PostgreSQL, Security, Jackson, OpenAP">
+      <option name="closed" value="true" />
+      <created>1778707045044</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778707045044</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Настройка подключения к PostgreSQL и Hibernate">
+      <option name="closed" value="true" />
+      <created>1778707116288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778707116288</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Главный класс запуска приложения">
+      <option name="closed" value="true" />
+      <created>1778707161727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778707161727</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Базовое исключение приложения с HTTP-статусом">
+      <option name="closed" value="true" />
+      <created>1778707236992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778707236992</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Глобальный обработчик ошибок">
+      <option name="closed" value="true" />
+      <created>1778707347763</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778707347763</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавлено исключение для ошибок TMDB API">
+      <option name="closed" value="true" />
+      <created>1778769625597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769625597</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Модель найденного варианта фильма">
+      <option name="closed" value="true" />
+      <created>1778769694141</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769694141</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Модель детальных данных фильма с жанрами и актёрами">
+      <option name="closed" value="true" />
+      <created>1778769730542</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769730542</updated>
+    </task>
+    <task id="LOCAL-00011" summary="HTTP-клиент для запросов к TMDB с обработкой ошибок и сохранением логов">
+      <option name="closed" value="true" />
+      <created>1778769766305</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769766305</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Сущность и репозиторий для логов обращений к внешнему API">
+      <option name="closed" value="true" />
+      <created>1778769804807</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769804807</updated>
+    </task>
+    <task id="LOCAL-00013" summary="HTTP-клиент для запросов к TMDB с обработкой ошибок и сохранением логов">
+      <option name="closed" value="true" />
+      <created>1778769927122</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769927122</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Интерфейс поставщика данных о фильмах">
+      <option name="closed" value="true" />
+      <created>1778769982986</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1778769982986</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Адаптер между приложением и TMDB-клиентом">
+      <option name="closed" value="true" />
+      <created>1778770021609</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770021609</updated>
+    </task>
+    <task id="LOCAL-00016" summary="токен связь">
+      <option name="closed" value="true" />
+      <created>1778770224896</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770224896</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Сущность пользователя: логин, email BCrypt-хеш пароля">
+      <option name="closed" value="true" />
+      <created>1778770521882</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770521882</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Сущность пользователя: логин, email BCrypt-хеш пароля">
+      <option name="closed" value="true" />
+      <created>1778770543077</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770543077</updated>
+    </task>
+    <task id="LOCAL-00019" summary="DTO для запросов регистрации/входа и ответа с пользователем">
+      <option name="closed" value="true" />
+      <created>1778770603451</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770603451</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Сервис регистрации и входа с валидацией и хешированием">
+      <option name="closed" value="true" />
+      <created>1778770661428</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770661428</updated>
+    </task>
+    <task id="LOCAL-00021" summary="REST-контроллер для /api/auth/register, /login, /logout, /me">
+      <option name="closed" value="true" />
+      <created>1778770687124</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770687124</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Перечисление статусов отчёта: RUNNING, COMPLETED, ERROR">
+      <option name="closed" value="true" />
+      <created>1778770818293</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770818293</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Сущность аналитического отчёта: пользователь, статус, JSON статистики, список введённых фильмов">
+      <option name="closed" value="true" />
+      <created>1778770853582</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770853582</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Сущность введённого фильма: оригинальное название, найденный TMDB id, кандидаты, детали JSON">
+      <option name="closed" value="true" />
+      <created>1778770888760</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770888760</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Репозиторий отчётов с методом поиска по пользователю">
+      <option name="closed" value="true" />
+      <created>1778770914480</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770914480</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Репозиторий для введённых фильмов">
+      <option name="closed" value="true" />
+      <created>1778770943007</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1778770943007</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Интерфейс стратегии и контекст для паттерна Strategy">
+      <option name="closed" value="true" />
+      <created>1778772692290</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772692290</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Стратегия подсчёта распределения по жанрам">
+      <option name="closed" value="true" />
+      <created>1778772715065</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772715065</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Стратегия подсчёта распределения по годам выпуска">
+      <option name="closed" value="true" />
+      <created>1778772770453</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772770453</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Стратегия подсчёта частоты актёров">
+      <option name="closed" value="true" />
+      <created>1778772792243</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772792243</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Сложный объект результата и интерфейс строителя">
+      <option name="closed" value="true" />
+      <created>1778772823234</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772823234</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Конкретный строитель, использующий стратегии">
+      <option name="closed" value="true" />
+      <created>1778772868843</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772868843</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Директор, управляющий порядком построения результата">
+      <option name="closed" value="true" />
+      <created>1778772895118</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772895118</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Интерфейс состояния и контекст для паттерна Stat">
+      <option name="closed" value="true" />
+      <created>1778772930405</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772930405</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Состояние RUNNING: очищает ошибку, устанавливает статус">
+      <option name="closed" value="true" />
+      <created>1778772957238</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772957238</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Состояние COMPLETED: проставляет время завершения">
+      <option name="closed" value="true" />
+      <created>1778772974477</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772974477</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Состояние ERROR: сохраняет сообщение об ошибке">
+      <option name="closed" value="true" />
+      <created>1778772997101</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1778772997101</updated>
+    </task>
+    <task id="LOCAL-00038" summary="DTO для запросов и ответов аналитики: CreateReportRequest, ReportResponse, MovieMatchDto, CandidateDto">
+      <option name="closed" value="true" />
+      <created>1778773132878</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773132878</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Сервис для сериализации/десериализации JSON статистики">
+      <option name="closed" value="true" />
+      <created>1778773156514</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773156514</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Маппер для преобразования AnalysisReport в ReportResponse">
+      <option name="closed" value="true" />
+      <created>1778773187456</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773187456</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Фасад: создание отчёта, обработка фильмов, повторный анализ без TMDB, история">
+      <option name="closed" value="true" />
+      <created>1778773210234</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773210234</updated>
+    </task>
+    <task id="LOCAL-00042" summary="REST-контроллер для /api/reports (создать, история, открыть, повторить)">
+      <option name="closed" value="true" />
+      <created>1778773239378</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773239378</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сущность пользователя: логин, email BCrypt-хеш пароля" />
+    <MESSAGE value="DTO для запросов регистрации/входа и ответа с пользователем" />
+    <MESSAGE value="Сервис регистрации и входа с валидацией и хешированием" />
+    <MESSAGE value="REST-контроллер для /api/auth/register, /login, /logout, /me" />
+    <MESSAGE value="Перечисление статусов отчёта: RUNNING, COMPLETED, ERROR" />
+    <MESSAGE value="Сущность аналитического отчёта: пользователь, статус, JSON статистики, список введённых фильмов" />
+    <MESSAGE value="Сущность введённого фильма: оригинальное название, найденный TMDB id, кандидаты, детали JSON" />
+    <MESSAGE value="Репозиторий отчётов с методом поиска по пользователю" />
+    <MESSAGE value="Репозиторий для введённых фильмов" />
+    <MESSAGE value="Интерфейс стратегии и контекст для паттерна Strategy" />
+    <MESSAGE value="Стратегия подсчёта распределения по жанрам" />
+    <MESSAGE value="Стратегия подсчёта распределения по годам выпуска" />
+    <MESSAGE value="Стратегия подсчёта частоты актёров" />
+    <MESSAGE value="Сложный объект результата и интерфейс строителя" />
+    <MESSAGE value="Конкретный строитель, использующий стратегии" />
+    <MESSAGE value="Директор, управляющий порядком построения результата" />
+    <MESSAGE value="Интерфейс состояния и контекст для паттерна Stat" />
+    <MESSAGE value="Состояние RUNNING: очищает ошибку, устанавливает статус" />
+    <MESSAGE value="Состояние COMPLETED: проставляет время завершения" />
+    <MESSAGE value="Состояние ERROR: сохраняет сообщение об ошибке" />
+    <MESSAGE value="DTO для запросов и ответов аналитики: CreateReportRequest, ReportResponse, MovieMatchDto, CandidateDto" />
+    <MESSAGE value="Сервис для сериализации/десериализации JSON статистики" />
+    <MESSAGE value="Маппер для преобразования AnalysisReport в ReportResponse" />
+    <MESSAGE value="Фасад: создание отчёта, обработка фильмов, повторный анализ без TMDB, история" />
+    <MESSAGE value="REST-контроллер для /api/reports (создать, история, открыть, повторить)" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST-контроллер для /api/reports (создать, история, открыть, повторить)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
