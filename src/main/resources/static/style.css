@@ -1,0 +1,51 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+header { background: #1f2937; color: white; padding: 24px 40px; }
+header h1 { margin: 0 0 8px; }
+header a { color: #bfdbfe; }
+main { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+.card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 10px 24px rgba(0,0,0,.07); }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+input, textarea { display: block; box-sizing: border-box; width: 100%; margin: 8px 0; padding: 12px; border: 1px solid #d1d5db; border-radius: 10px; font-size: 15px; }
+button { background: #2563eb; color: white; border: 0; border-radius: 10px; padding: 10px 16px; cursor: pointer; margin-top: 8px; }
+button:hover { background: #1d4ed8; }
+button.secondary { background: #4b5563; }
+button.secondary:hover { background: #374151; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+.hidden { display: none; }
+.message { font-weight: bold; }
+.error { color: #b91c1c; }
+.success { color: #15803d; }
+.hint { color: #4b5563; margin-top: -4px; line-height: 1.4; }
+.topline { display: flex; justify-content: space-between; align-items: center; }
+.movie, .historyItem { border: 1px solid #e5e7eb; padding: 12px; margin: 8px 0; border-radius: 10px; background: #fff; }
+.historyItem { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.historyItem p { margin: 4px 0; }
+.historyActions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.badge { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; background: #e5e7eb; }
+.badge.ok { background: #dcfce7; color: #166534; }
+.badge.err { background: #fee2e2; color: #991b1b; }
+.chartGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch; }
+.chartCard { border: 1px solid #e5e7eb; border-radius: 14px; padding: 16px; background: #fafafa; overflow: hidden; }
+.chartCard.wide { grid-column: 1 / -1; }
+.chartCard h4 { margin: 0 0 8px; }
+.chartDescription { min-height: 42px; color: #374151; font-size: 14px; line-height: 1.35; }
+
+.htmlChart { width: 100%; margin-top: 12px; }
+.barRow { display: grid; grid-template-columns: 190px 1fr 42px; align-items: center; gap: 12px; margin: 10px 0; }
+.barLabel { font-size: 15px; color: #111827; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.barTrack { height: 26px; background: #e5e7eb; border-radius: 8px; overflow: hidden; }
+.barFill { height: 100%; background: #93b5f0; border: 1px solid #5b8bdc; box-sizing: border-box; border-radius: 8px; }
+.barValue { font-size: 15px; font-weight: bold; color: #111827; text-align: right; }
+.emptyChart { color: #6b7280; font-size: 15px; padding: 12px 0; }
+
+@media (max-width: 900px) {
+    .grid, .chartGrid { grid-template-columns: 1fr; }
+    .chartCard.wide { grid-column: auto; }
+    .historyItem { display: block; }
+    .historyActions { justify-content: flex-start; }
+}
+
+@media (max-width: 700px) {
+    .barRow { grid-template-columns: 120px 1fr 35px; }
+    .barLabel { font-size: 13px; }
+}
