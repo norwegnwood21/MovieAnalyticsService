@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Киноразбор</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Киноразбор</h1>
+    <p>Аналитика списка фильмов через TMDB API</p>
+    <a href="/swagger-ui.html" target="_blank">Swagger</a>
+</header>
+
+<main>
+    <section class="card" id="authCard">
+        <h2>Вход / регистрация</h2>
+        <div class="grid">
+            <div>
+                <h3>Регистрация</h3>
+                <input id="regUsername" placeholder="username" />
+                <input id="regEmail" placeholder="email" />
+                <input id="regPassword" type="password" placeholder="password" />
+                <button onclick="registerUser()">Зарегистрироваться</button>
+            </div>
+            <div>
+                <h3>Вход</h3>
+                <input id="loginUsername" placeholder="username" />
+                <input id="loginPassword" type="password" placeholder="password" />
+                <button onclick="loginUser()">Войти</button>
+            </div>
+        </div>
+        <p id="authMessage" class="message"></p>
+    </section>
+
+    <section class="card hidden" id="appCard">
+        <div class="topline">
+            <h2>Новый аналитический запрос</h2>
+            <button onclick="logoutUser()">Выйти</button>
+        </div>
+        <p id="userInfo"></p>
+        <textarea id="movieTitles" rows="6" placeholder="Введите фильмы, каждый с новой строки:&#10;Inception&#10;Interstellar&#10;The Matrix"></textarea>
+        <button onclick="createReport()">Запустить анализ</button>
+        <p id="statusMessage" class="message"></p>
+    </section>
+
+    <section class="card hidden" id="resultCard">
+        <h2>Результат анализа</h2>
+        <div id="reportStatus"></div>
+        <button id="repeatCurrentButton" class="secondary hidden" onclick="repeatCurrentReport()">Повторить этот анализ без обращения к TMDB</button>
+
+        <h3>Сопоставление фильмов</h3>
+        <div id="matches"></div>
+
+        <h3>Визуализации</h3>
+        <p class="hint">
+            Диаграммы строятся по фильмам, которые были успешно найдены в TMDB.
+            Под каждой диаграммой указано, что именно она показывает.
+        </p>
+
+        <div class="chartGrid">
+            <div class="chartCard">
+                <h4>Распределение по жанрам</h4>
+                <p id="genreDescription" class="chartDescription"></p>
+                <div id="genreChart" class="htmlChart"></div>
+            </div>
+
+            <div class="chartCard">
+                <h4>Распределение по годам выпуска</h4>
+                <p id="yearDescription" class="chartDescription"></p>
+                <div id="yearChart" class="htmlChart"></div>
+            </div>
+
+            <div class="chartCard wide">
+                <h4>Самые часто встречающиеся актёры</h4>
+                <p id="castDescription" class="chartDescription"></p>
+                <div id="castChart" class="htmlChart"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card hidden" id="historyCard">
+        <h2>История отчётов</h2>
+        <button onclick="loadHistory()">Обновить историю</button>
+        <p id="historyMessage" class="message"></p>
+        <div id="history"></div>
+    </section>
+</main>
+<script src="app.js?v=6"></script>
+</body>
+</html>
