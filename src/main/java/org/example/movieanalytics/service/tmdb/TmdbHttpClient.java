@@ -23,7 +23,6 @@ public class TmdbHttpClient {
     private static final String BASE_URL = "https://api.themoviedb.org/3";
 
    private final String token = "";
-
     private final HttpClient httpClient = HttpClient.newHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final ExternalApiLogRepository logRepository;
