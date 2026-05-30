@@ -4,36 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией">
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="Раьота с комментариями, типами  DTO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/dto/AnalysisDtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/dto/AnalysisDtos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/ReportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/ReportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisDirector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResultBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResultBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportStatusContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportStatusContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/MovieDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/MovieDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbMovieDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbMovieDataAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -479,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778773324354</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Раьота с комментариями, типами  DTO">
+      <option name="closed" value="true" />
+      <created>1780149396309</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1780149396309</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REST-контроллер для /api/auth/register, /login, /logout, /me" />
     <MESSAGE value="Перечисление статусов отчёта: RUNNING, COMPLETED, ERROR" />
     <MESSAGE value="Сущность аналитического отчёта: пользователь, статус, JSON статистики, список введённых фильмов" />
     <MESSAGE value="Сущность введённого фильма: оригинальное название, найденный TMDB id, кандидаты, детали JSON" />
@@ -519,6 +498,7 @@
     <MESSAGE value="Главная страница с формами регистрации/входа, ввода фильмов и отображением отчёта" />
     <MESSAGE value="Стили: карточки, диаграммы, бейджи статусов, адаптивная вёрстка" />
     <MESSAGE value="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией" />
-    <option name="LAST_COMMIT_MESSAGE" value="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией" />
+    <MESSAGE value="Раьота с комментариями, типами  DTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Раьота с комментариями, типами  DTO" />
   </component>
 </project>

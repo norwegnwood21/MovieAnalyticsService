@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface ExternalApiLogRepository extends JpaRepository<ExternalApiLog, Long> {
     @Modifying
+    //при удалении отчета вручную удаляем логи
     @Query("delete from ExternalApiLog log where log.report.id = :reportId")
     void deleteByReportId(@Param("reportId") Long reportId);
 }
