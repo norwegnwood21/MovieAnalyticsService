@@ -3,7 +3,7 @@ package org.example.movieanalytics.service.patterns.state;
 import org.example.movieanalytics.entity.AnalysisReport;
 import org.springframework.stereotype.Component;
 
-// Context из паттерна State.
+
 @Component
 public class ReportStatusContext {
     private ReportState state;

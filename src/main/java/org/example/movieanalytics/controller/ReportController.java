@@ -30,7 +30,7 @@ public class ReportController {
         AppUser user = authService.requireUser(AuthController.currentUserId(session));
         return analysisFacade.history(user);
     }
-
+    //отчет по id
     @GetMapping("/{id}")
     public AnalysisDtos.ReportResponse get(@PathVariable Long id, HttpSession session) {
         AppUser user = authService.requireUser(AuthController.currentUserId(session));
@@ -43,4 +43,11 @@ public class ReportController {
         AppUser user = authService.requireUser(AuthController.currentUserId(session));
         return analysisFacade.repeatReportWithoutTmdb(user, id);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id, HttpSession session) {
+        AppUser user = authService.requireUser(AuthController.currentUserId(session));
+        analysisFacade.deleteReport(user, id);
+    }
+
 }

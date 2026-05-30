@@ -49,3 +49,42 @@ button:disabled { opacity: .55; cursor: not-allowed; }
     .barRow { grid-template-columns: 120px 1fr 35px; }
     .barLabel { font-size: 13px; }
 }
+
+button.danger {
+    background: #dc2626;
+}
+button.danger:hover {
+    background: #b91c1c;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 12px 0 24px;
+}
+
+.summaryCard {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 16px;
+    background: #ffffff;
+}
+
+.summaryCard h4 {
+    margin: 0 0 10px;
+    color: #111827;
+}
+
+.summaryCard p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.summaryCard details {
+    margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+    .summaryGrid { grid-template-columns: 1fr; }
+}

@@ -17,12 +17,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-// Service из паттерна Adapter: низкоуровневый клиент TMDB.
+
 @Component
 public class TmdbHttpClient {
     private static final String BASE_URL = "https://api.themoviedb.org/3";
 
-   private final String token = "";
+    private final String token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYmY1NDBiMGM1OWU3Mzk5NDMyMGIyMzE0M2UyM2Y1NiIsIm5iZiI6MTc3ODE1MzE2OC4wMzAwMDAyLCJzdWIiOiI2OWZjNzZkMDY5OTc3MzE1MzJjNDgyNzMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.2XGvR2T-ypa_4fbwus4kmBHGA1rR2FInQrd-dqK7mHk";
     private final HttpClient httpClient = HttpClient.newHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final ExternalApiLogRepository logRepository;

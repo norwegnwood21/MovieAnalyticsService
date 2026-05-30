@@ -5,7 +5,7 @@ import org.example.movieanalytics.service.tmdb.TmdbMovieData;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
-// ConcreteBuilder из паттерна Builder.
+
 @Component
 public class DefaultAnalysisResultBuilder implements AnalysisResultBuilder {
     private AnalysisResult result;

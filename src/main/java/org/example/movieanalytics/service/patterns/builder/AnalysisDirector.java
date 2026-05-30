@@ -4,7 +4,6 @@ import org.example.movieanalytics.service.tmdb.TmdbMovieData;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
-// Director из паттерна Builder: именно он задает порядок шагов создания сложного результата.
 @Component
 public class AnalysisDirector {
     public AnalysisResult construct(AnalysisResultBuilder builder, List<TmdbMovieData> movies) {

@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="REST-контроллер для /api/reports (создать, история, открыть, повторить)" />
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/dto/AnalysisDtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/dto/AnalysisDtos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/ReportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/ReportMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisDirector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResultBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResultBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportStatusContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportStatusContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/MovieDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/MovieDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbMovieDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbMovieDataAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +62,9 @@
     &quot;accountId&quot;: &quot;07babbcb-9034-42ed-bef5-849c9021d42b&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -40,26 +73,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MovieAnalyticsApplication.executor": "Run",
-    "Application.TmdbTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/facade-frontend",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Лилия/IdeaProjects/MovieAnalyticsService/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MovieAnalyticsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TmdbTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AnalysisDirectorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AnalysisReportRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppUserRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CastAggregationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CastAnalysisStrategyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GenreAggregationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GenreAnalysisStrategyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReportTableJdbcIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TmdbHttpClientParsingTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTableJdbcIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.YearAggregationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.YearAnalysisStrategyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MovieAnalyticsService [test].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Лилия/IdeaProjects/MovieAnalyticsService/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src" />
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\resources" />
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService" />
-      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\resources\static" />
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\service" />
-      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\controller" />
-      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example" />
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\repository" />
     </key>
   </component>
   <component name="TaskManager">
@@ -406,7 +455,31 @@
       <option name="project" value="LOCAL" />
       <updated>1778773239378</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Главная страница с формами регистрации/входа, ввода фильмов и отображением отчёта">
+      <option name="closed" value="true" />
+      <created>1778773263945</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773263945</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Стили: карточки, диаграммы, бейджи статусов, адаптивная вёрстка">
+      <option name="closed" value="true" />
+      <created>1778773287555</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773287555</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией">
+      <option name="closed" value="true" />
+      <created>1778773324354</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1778773324354</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,9 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сущность пользователя: логин, email BCrypt-хеш пароля" />
-    <MESSAGE value="DTO для запросов регистрации/входа и ответа с пользователем" />
-    <MESSAGE value="Сервис регистрации и входа с валидацией и хешированием" />
     <MESSAGE value="REST-контроллер для /api/auth/register, /login, /logout, /me" />
     <MESSAGE value="Перечисление статусов отчёта: RUNNING, COMPLETED, ERROR" />
     <MESSAGE value="Сущность аналитического отчёта: пользователь, статус, JSON статистики, список введённых фильмов" />
@@ -446,17 +516,9 @@
     <MESSAGE value="Маппер для преобразования AnalysisReport в ReportResponse" />
     <MESSAGE value="Фасад: создание отчёта, обработка фильмов, повторный анализ без TMDB, история" />
     <MESSAGE value="REST-контроллер для /api/reports (создать, история, открыть, повторить)" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST-контроллер для /api/reports (создать, история, открыть, повторить)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Главная страница с формами регистрации/входа, ввода фильмов и отображением отчёта" />
+    <MESSAGE value="Стили: карточки, диаграммы, бейджи статусов, адаптивная вёрстка" />
+    <MESSAGE value="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией" />
+    <option name="LAST_COMMIT_MESSAGE" value="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией" />
   </component>
 </project>

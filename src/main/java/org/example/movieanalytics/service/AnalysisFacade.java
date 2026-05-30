@@ -6,6 +6,7 @@ import org.example.movieanalytics.dto.AnalysisDtos;
 import org.example.movieanalytics.entity.*;
 import org.example.movieanalytics.exception.AppException;
 import org.example.movieanalytics.repository.AnalysisReportRepository;
+import org.example.movieanalytics.repository.ExternalApiLogRepository;
 import org.example.movieanalytics.service.patterns.builder.*;
 import org.example.movieanalytics.service.patterns.state.*;
 import org.example.movieanalytics.service.tmdb.*;
@@ -14,11 +15,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-// Facade: контроллеру не нужно знать порядок работы с БД, TMDB, состояниями и Builder.
 @Service
 public class AnalysisFacade {
     private final AnalysisReportRepository reportRepository;
     private final MovieDataProvider movieDataProvider;
+    private final ExternalApiLogRepository externalApiLogRepository;
     private final JsonService jsonService;
     private final AnalysisDirector director;
     private final DefaultAnalysisResultBuilder builder;
@@ -26,10 +27,12 @@ public class AnalysisFacade {
     private final ReportMapper mapper;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public AnalysisFacade(AnalysisReportRepository reportRepository, MovieDataProvider movieDataProvider, JsonService jsonService,
+    public AnalysisFacade(AnalysisReportRepository reportRepository, ExternalApiLogRepository externalApiLogRepository,
+                          MovieDataProvider movieDataProvider, JsonService jsonService,
                           AnalysisDirector director, DefaultAnalysisResultBuilder builder,
                           ReportStatusContext statusContext, ReportMapper mapper) {
         this.reportRepository = reportRepository;
+        this.externalApiLogRepository = externalApiLogRepository;
         this.movieDataProvider = movieDataProvider;
         this.jsonService = jsonService;
         this.director = director;
@@ -197,4 +200,19 @@ public class AnalysisFacade {
         if (!report.getUser().getId().equals(user.getId())) throw new AppException(403, "Нет доступа к этому отчёту");
         return mapper.toResponse(report);
     }
+
+    @Transactional
+    public void deleteReport(AppUser user, Long reportId) {
+        AnalysisReport report = reportRepository.findById(reportId)
+                .orElseThrow(() -> new AppException(404, "Отчёт не найден"));
+        if (!report.getUser().getId().equals(user.getId())) {
+            throw new AppException(403, "Нет доступа к этому отчёту");
+        }
+
+        // Сначала удаляем логи обращений к TMDB, потому что они связаны с отчётом внешним ключом.
+        // input_movies удалятся автоматически через cascade = CascadeType.ALL и orphanRemoval = true.
+        externalApiLogRepository.deleteByReportId(reportId);
+        reportRepository.delete(report);
+    }
+
 }

@@ -5,8 +5,6 @@ import org.example.movieanalytics.entity.AnalysisReport;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
-// Adapter: реализует понятный приложению интерфейс MovieDataProvider,
-// но внутри вызывает сторонний TMDB HTTP client.
 @Component
 public class TmdbMovieDataAdapter implements MovieDataProvider {
     private final TmdbHttpClient tmdbHttpClient;

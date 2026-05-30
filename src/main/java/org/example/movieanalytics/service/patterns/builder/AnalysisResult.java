@@ -3,7 +3,7 @@ package org.example.movieanalytics.service.patterns.builder;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-// Product из паттерна Builder.
+
 public class AnalysisResult {
     private Map<String, Integer> genreStats = new LinkedHashMap<>();
     private Map<String, Integer> yearStats = new LinkedHashMap<>();

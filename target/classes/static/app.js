@@ -127,6 +127,7 @@ async function loadHistory() {
                 '<div class="historyActions">' +
                     '<button onclick="loadReport(' + report.id + ')">Открыть</button>' +
                     '<button class="secondary" onclick="repeatReport(' + report.id + ')">Повторить без TMDB</button>' +
+                    '<button class="danger" onclick="deleteReport(' + report.id + ')">Удалить</button>' +
                 '</div>';
             historyBox.appendChild(div);
         }
@@ -176,6 +177,72 @@ async function repeatReport(id) {
     }
 }
 
+async function deleteReport(id) {
+    var ok = confirm('Удалить отчёт #' + id + '? Он будет удалён из локальной базы данных вместе с введёнными фильмами и логами TMDB.');
+    if (!ok) return;
+
+    var historyMessage = byId('historyMessage');
+    try {
+        await request('/api/reports/' + id, 'DELETE');
+        if (historyMessage) {
+            historyMessage.textContent = 'Отчёт #' + id + ' удалён.';
+            historyMessage.className = 'message success';
+        }
+        if (currentReportId === id) {
+            currentReportId = null;
+            byId('resultCard').classList.add('hidden');
+        }
+        await loadHistory();
+    } catch (e) {
+        if (historyMessage) {
+            historyMessage.textContent = e.message;
+            historyMessage.className = 'message error';
+        } else {
+            alert(e.message);
+        }
+    }
+}
+
+function renderMovieSummaries(movies) {
+    var box = byId('movieSummaries');
+    if (!box) return;
+
+    box.innerHTML = '';
+
+    var successful = movies.filter(function (movie) { return movie.success && movie.summary; });
+    if (successful.length === 0) {
+        box.innerHTML = '<p class="emptyChart">Нет кратких данных: фильмы не были успешно сопоставлены с TMDB.</p>';
+        return;
+    }
+
+    for (var i = 0; i < successful.length; i++) {
+        var movie = successful[i];
+        var summary = movie.summary;
+
+        var card = document.createElement('div');
+        card.className = 'summaryCard';
+
+        var genres = summary.genres && summary.genres.length ? summary.genres.join(', ') : 'не указаны';
+        var actors = summary.actors && summary.actors.length ? summary.actors.join(', ') : 'не указаны';
+        var countries = summary.countries && summary.countries.length ? summary.countries.join(', ') : 'не указаны';
+        var runtime = summary.runtime ? summary.runtime + ' мин.' : 'не указана';
+        var rating = summary.voteAverage !== null && summary.voteAverage !== undefined ? summary.voteAverage : 'не указан';
+        var overview = summary.overview ? summary.overview : 'Описание отсутствует.';
+
+        card.innerHTML =
+            '<h4>' + escapeHtml(summary.title || movie.matchedTitle || movie.originalTitle) + '</h4>' +
+            '<p><b>Год:</b> ' + escapeHtml(summary.year || 'неизвестно') + '</p>' +
+            '<p><b>Жанры:</b> ' + escapeHtml(genres) + '</p>' +
+            '<p><b>Актёры:</b> ' + escapeHtml(actors) + '</p>' +
+            '<p><b>Страны:</b> ' + escapeHtml(countries) + '</p>' +
+            '<p><b>Длительность:</b> ' + escapeHtml(runtime) + '</p>' +
+            '<p><b>Рейтинг TMDB:</b> ' + escapeHtml(rating) + '</p>' +
+            '<details><summary>Описание</summary><p>' + escapeHtml(overview) + '</p></details>';
+
+        box.appendChild(card);
+    }
+}
+
 function renderReport(report) {
     currentReportId = report.id;
     byId('resultCard').classList.remove('hidden');
@@ -214,6 +281,8 @@ function renderReport(report) {
             '<details><summary>Найденные варианты TMDB</summary><ul>' + candidates + '</ul></details>';
         byId('matches').appendChild(div);
     }
+
+    renderMovieSummaries(report.movies || []);
 
     updateDescription('genreDescription', report.genreStats, 'жанров');
     updateDescription('yearDescription', report.yearStats, 'годов выпуска');
@@ -318,5 +387,6 @@ window.loadHistory = loadHistory;
 window.loadReport = loadReport;
 window.repeatReport = repeatReport;
 window.repeatCurrentReport = repeatCurrentReport;
+window.deleteReport = deleteReport;
 
 checkMe();
