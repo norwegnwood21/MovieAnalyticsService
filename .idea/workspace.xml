@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="Раьота с комментариями, типами  DTO">
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="ручное удаление логов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -459,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780149396309</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="ручное удаление логов">
+      <option name="closed" value="true" />
+      <created>1780152229796</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1780152229796</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Перечисление статусов отчёта: RUNNING, COMPLETED, ERROR" />
     <MESSAGE value="Сущность аналитического отчёта: пользователь, статус, JSON статистики, список введённых фильмов" />
     <MESSAGE value="Сущность введённого фильма: оригинальное название, найденный TMDB id, кандидаты, детали JSON" />
     <MESSAGE value="Репозиторий отчётов с методом поиска по пользователю" />
@@ -499,6 +506,7 @@
     <MESSAGE value="Стили: карточки, диаграммы, бейджи статусов, адаптивная вёрстка" />
     <MESSAGE value="Клиентская логика: отправка запросов, отрисовка диаграмм, управление сессией" />
     <MESSAGE value="Раьота с комментариями, типами  DTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Раьота с комментариями, типами  DTO" />
+    <MESSAGE value="ручное удаление логов" />
+    <option name="LAST_COMMIT_MESSAGE" value="ручное удаление логов" />
   </component>
 </project>
