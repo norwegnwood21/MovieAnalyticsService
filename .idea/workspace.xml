@@ -4,71 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="README файл 2">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/ReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/dto/AnalysisDtos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/dto/AuthDtos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/entity/AnalysisReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/entity/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/entity/ExternalApiLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/entity/InputMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/entity/ReportStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/AnalysisReportRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/InputMovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/JsonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/ReportMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/AnalysisStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/CastAnalysisStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/GenreAnalysisStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/analysis/YearAnalysisStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisDirector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/AnalysisResultBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/CompletedState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ErrorState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/ReportStatusContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/state/RunningState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/MovieDataProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbMovieDataAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/movieanalytics/integration/ReportTableJdbcIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/movieanalytics/integration/UserTableJdbcIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/movieanalytics/tmdb/TmdbHttpClientParsingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment=" TMDB связь с БД">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +88,18 @@
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\repository" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="TMDB_ACCESS_TOKEN" value="eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYmY1NDBiMGM1OWU3Mzk5NDMyMGIyMzE0M2UyM2Y1NiIsIm5iZiI6MTc3ODE1MzE2OC4wMzAwMDAyLCJzdWIiOiI2OWZjNzZkMDY5OTc3MzE1MzJjNDgyNzMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.2XGvR2T-ypa_4fbwus4kmBHGA1rR2FInQrd-dqK7mHk" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="org.example.movieanalytics.MovieAnalyticsApplication" />
+      <module name="MovieAnalyticsService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="" />
@@ -157,22 +107,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778154022733</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Добавлен pom.xml со всеми зависимостями Spring Boot, JPA, PostgreSQL, Security, Jackson, OpenAP">
-      <option name="closed" value="true" />
-      <created>1778707045044</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1778707045044</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Настройка подключения к PostgreSQL и Hibernate">
-      <option name="closed" value="true" />
-      <created>1778707116288</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1778707116288</updated>
     </task>
     <task id="LOCAL-00005" summary="Главный класс запуска приложения">
       <option name="closed" value="true" />
@@ -550,7 +484,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780943937684</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Analysis+ builder pattern + Facade pattern + Strategy pattern изменение после TMDB">
+      <option name="closed" value="true" />
+      <created>1780945486788</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1780945486789</updated>
+    </task>
+    <task id="LOCAL-00053" summary=" TMDB связь с БД">
+      <option name="closed" value="true" />
+      <created>1780945574018</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1780945574018</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,8 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Интерфейс стратегии и контекст для паттерна Strategy" />
-    <MESSAGE value="Стратегия подсчёта распределения по жанрам" />
     <MESSAGE value="Стратегия подсчёта распределения по годам выпуска" />
     <MESSAGE value="Стратегия подсчёта частоты актёров" />
     <MESSAGE value="Сложный объект результата и интерфейс строителя" />
@@ -590,6 +538,8 @@
     <MESSAGE value="тесты" />
     <MESSAGE value="README файл" />
     <MESSAGE value="README файл 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="README файл 2" />
+    <MESSAGE value="Analysis+ builder pattern + Facade pattern + Strategy pattern изменение после TMDB" />
+    <MESSAGE value=" TMDB связь с БД" />
+    <option name="LAST_COMMIT_MESSAGE" value=" TMDB связь с БД" />
   </component>
 </project>

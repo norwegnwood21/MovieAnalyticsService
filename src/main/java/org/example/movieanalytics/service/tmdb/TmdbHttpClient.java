@@ -22,7 +22,7 @@ import java.util.List;
 public class TmdbHttpClient {
     private static final String BASE_URL = "https://api.themoviedb.org/3";
 
-    private final String token = "REMOVED";
+    private final String token = System.getenv("TMDB_ACCESS_TOKEN");
     private final HttpClient httpClient = HttpClient.newHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final ExternalApiLogRepository logRepository;
