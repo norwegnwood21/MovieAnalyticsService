@@ -1,0 +1,3 @@
+org\example\movieanalytics\integration\ReportTableJdbcIntegrationTest.class
+org\example\movieanalytics\integration\UserTableJdbcIntegrationTest.class
+org\example\movieanalytics\tmdb\TmdbHttpClientParsingTest.class
