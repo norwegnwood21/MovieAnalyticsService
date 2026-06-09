@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment=" TMDB  скрытый токен">
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="pom xml зависимости для интеграционных тестов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.xml" afterDir="false" />
@@ -70,6 +69,8 @@
     &quot;JUnit.UserTableJdbcIntegrationTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.YearAggregationTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.YearAnalysisStrategyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MovieAnalyticsService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MovieAnalyticsService [package].executor&quot;: &quot;Run&quot;,
     &quot;Maven.MovieAnalyticsService [test].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -89,9 +90,9 @@
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService" />
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src" />
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\resources" />
-      <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService" />
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\service" />
       <recent name="C:\Users\Лилия\IdeaProjects\MovieAnalyticsService\src\main\java\org\example\movieanalytics\repository" />
     </key>
@@ -115,14 +116,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778154022733</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Базовое исключение приложения с HTTP-статусом">
-      <option name="closed" value="true" />
-      <created>1778707236992</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1778707236992</updated>
     </task>
     <task id="LOCAL-00007" summary="Глобальный обработчик ошибок">
       <option name="closed" value="true" />
@@ -508,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780946213035</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="pom xml зависимости для интеграционных тестов">
+      <option name="closed" value="true" />
+      <created>1781010517498</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1781010517498</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Стратегия подсчёта частоты актёров" />
     <MESSAGE value="Сложный объект результата и интерфейс строителя" />
     <MESSAGE value="Конкретный строитель, использующий стратегии" />
     <MESSAGE value="Директор, управляющий порядком построения результата" />
@@ -548,6 +548,7 @@
     <MESSAGE value="Analysis+ builder pattern + Facade pattern + Strategy pattern изменение после TMDB" />
     <MESSAGE value=" TMDB связь с БД" />
     <MESSAGE value=" TMDB  скрытый токен" />
-    <option name="LAST_COMMIT_MESSAGE" value=" TMDB  скрытый токен" />
+    <MESSAGE value="pom xml зависимости для интеграционных тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom xml зависимости для интеграционных тестов" />
   </component>
 </project>
