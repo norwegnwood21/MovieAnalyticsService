@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment=" TMDB связь с БД">
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment=" TMDB  скрытый токен">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/tmdb/TmdbHttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.integration.ReportTableJdbcIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.integration.UserTableJdbcIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.movieanalytics.tmdb.TmdbHttpClientParsingTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +57,7 @@
   &quot;keyToString&quot;: {
     &quot;Application.MovieAnalyticsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.TmdbTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.AnalysisDirectorTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.AnalysisReportRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.AppUserRepositoryIntegrationTest.executor&quot;: &quot;Run&quot;,
@@ -107,14 +115,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778154022733</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Главный класс запуска приложения">
-      <option name="closed" value="true" />
-      <created>1778707161727</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1778707161727</updated>
     </task>
     <task id="LOCAL-00006" summary="Базовое исключение приложения с HTTP-статусом">
       <option name="closed" value="true" />
@@ -500,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780945574018</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary=" TMDB  скрытый токен">
+      <option name="closed" value="true" />
+      <created>1780946213035</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1780946213035</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Стратегия подсчёта распределения по годам выпуска" />
     <MESSAGE value="Стратегия подсчёта частоты актёров" />
     <MESSAGE value="Сложный объект результата и интерфейс строителя" />
     <MESSAGE value="Конкретный строитель, использующий стратегии" />
@@ -540,6 +547,7 @@
     <MESSAGE value="README файл 2" />
     <MESSAGE value="Analysis+ builder pattern + Facade pattern + Strategy pattern изменение после TMDB" />
     <MESSAGE value=" TMDB связь с БД" />
-    <option name="LAST_COMMIT_MESSAGE" value=" TMDB связь с БД" />
+    <MESSAGE value=" TMDB  скрытый токен" />
+    <option name="LAST_COMMIT_MESSAGE" value=" TMDB  скрытый токен" />
   </component>
 </project>
