@@ -13,7 +13,8 @@ public class AuthController {
     private static final String USER_ID = "USER_ID";
     private final AuthService authService;
 
-    public AuthController(AuthService authService) { this.authService = authService; }
+    public AuthController(AuthService authService)
+    { this.authService = authService; }
 
     @PostMapping("/register")
     public AuthDtos.UserResponse register(@RequestBody AuthDtos.RegisterRequest request, HttpSession session) {

@@ -6,5 +6,6 @@ public class AppException extends RuntimeException {
         super(message);
         this.status = status;
     }
-    public int getStatus() { return status; }
+    public int getStatus()
+    { return status; }
 }

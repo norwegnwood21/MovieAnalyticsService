@@ -210,7 +210,6 @@ public class AnalysisFacade {
         }
 
         // Сначала удаляем логи обращений к TMDB, потому что они связаны с отчётом внешним ключом.
-        // input_movies удалятся автоматически через cascade = CascadeType.ALL и orphanRemoval = true.
         externalApiLogRepository.deleteByReportId(reportId);
         reportRepository.delete(report);
     }

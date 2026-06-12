@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="Сами скриншоты для README">
+    <list default="true" id="575c7851-38fb-4801-863b-b6735933cc7d" name="Changes" comment="В README добавлены тест-кейсы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/exception/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/exception/AppException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/repository/ExternalApiLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/AnalysisFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/movieanalytics/service/patterns/builder/DefaultAnalysisResultBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +114,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778154022733</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Модель детальных данных фильма с жанрами и актёрами">
-      <option name="closed" value="true" />
-      <created>1778769730542</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1778769730542</updated>
     </task>
     <task id="LOCAL-00011" summary="HTTP-клиент для запросов к TMDB с обработкой ошибок и сохранением логов">
       <option name="closed" value="true" />
@@ -503,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781022668797</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="В README добавлены тест-кейсы">
+      <option name="closed" value="true" />
+      <created>1781023449900</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1781023449900</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,7 +522,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Директор, управляющий порядком построения результата" />
     <MESSAGE value="Интерфейс состояния и контекст для паттерна Stat" />
     <MESSAGE value="Состояние RUNNING: очищает ошибку, устанавливает статус" />
     <MESSAGE value="Состояние COMPLETED: проставляет время завершения" />
@@ -543,6 +546,7 @@
     <MESSAGE value="pom xml зависимости для интеграционных тестов" />
     <MESSAGE value="В файл README добавлены скриншоты фронтенда, Swagger, mvn test" />
     <MESSAGE value="Сами скриншоты для README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сами скриншоты для README" />
+    <MESSAGE value="В README добавлены тест-кейсы" />
+    <option name="LAST_COMMIT_MESSAGE" value="В README добавлены тест-кейсы" />
   </component>
 </project>

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 public interface ExternalApiLogRepository extends JpaRepository<ExternalApiLog, Long> {
-    @Modifying
+    @Modifying //запрос изменяет данные, а не просто читает!
     //при удалении отчета вручную удаляем логи
     @Query("delete from ExternalApiLog log where log.report.id = :reportId")
     void deleteByReportId(@Param("reportId") Long reportId);
